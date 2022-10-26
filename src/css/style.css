@@ -58,7 +58,7 @@ main {
 
 #footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
     padding: 3%;
     gap: 5px;
     background-color: darkslategrey;
@@ -74,7 +74,7 @@ main {
 #footer li {
     color: white;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgb(241, 241, 241);
+    border-bottom: 1px solid rgb(27, 41, 41);
 }
 
 .colunm-1 {
@@ -129,11 +129,32 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+    padding: 0 5% 0 5%;
+    flex-direction: column;
+    border: 1px solid rgb(27, 41, 41);
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,5));
+}
+
+.colunm-5 input {
+    font-size: 1rem;
+    text-align: center;
+    width: 70%;
+}
+
+.colunm-5 p {
+    font-size: 1.5rem;
+}
+
+.colunm-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(27, 41, 41);
     font-size: 2rem;
 }
 
-.colunm-5 a,img {
+.colunm-6 a,img {
     padding: 1%;
     width: 50px;
 }
@@ -216,5 +237,9 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
+    }
+
+    .colunm-5 {
+        padding: 5%;
     }
 }
