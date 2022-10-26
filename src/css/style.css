@@ -42,8 +42,8 @@ a {
 }
 
 #menu a:hover {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.05);
     background-color: cadetblue;
 }
 
@@ -68,10 +68,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: gray;
+    color: white;
 }
 
 #footer li {
+    color: white;
     margin-bottom: 10px;
     border-bottom: 1px solid rgb(241, 241, 241);
 }
@@ -158,14 +159,16 @@ main {
 
     #nav.active #menu {
         display: block;
-        height: calc(40vh - 70px);
+        height: calc(60vh - 70px);
         visibility: visible;
     }
 
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
+        border: 1px solid rgba(0, 119, 255, 0.219);
         border-bottom: 2px solid rgba(0, 119, 255, 0.219);
+        margin-bottom: 10px;
     }
 
     #btn-mobile {
