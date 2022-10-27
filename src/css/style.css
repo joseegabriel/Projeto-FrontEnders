@@ -184,9 +184,15 @@ input:focus {
     font-size: 2rem;
 }
 
-#colunm-6 a,img {
+#colunm-6 a, p{ 
+    color: white;
     padding: 1%;
+}
+
+#colunm-6 img {
     width: 50px;
+    border-radius: 60px;
+    box-shadow: 5px 5px 10px rgb(141, 136, 136);
 }
 
 @media (max-width: 600px) {

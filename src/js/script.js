@@ -27,3 +27,7 @@ function stateHandle() {
     button.disabled = false;
   }
 }
+
+function alertAddCart (){
+    alert('Email enviado! Entraremos em contato em breve.')
+}
