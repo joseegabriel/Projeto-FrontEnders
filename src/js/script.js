@@ -28,6 +28,6 @@ function stateHandle() {
   }
 }
 
-function alertAddCart (){
+function alertEmailSent (){
     alert('Email enviado! Entraremos em contato em breve.')
 }
