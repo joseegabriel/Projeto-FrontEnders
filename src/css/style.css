@@ -22,7 +22,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(56, 65, 65);
+    background:  rgb(9, 27, 65);
 }
 
 #menu {
@@ -31,24 +31,110 @@ a {
     gap: 40px;
 }
 
-#menu a {
-    display: block;
+.neon-bt {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.9s;
     letter-spacing: 2px;
-    padding: .5rem;
-    transition: all 0.5s;
-    cursor: pointer;
-    box-shadow: 1px 1px 10px black;
-    border-radius: 10px;
-    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
+  
+  /*animação do span para criar linhas*/
+.neon-bt span {
+    position: absolute;
+    display: block;
+  }
 
-#menu a:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.05);
-    box-shadow: 1px 1px 10px white;
-    color: white;
-    background-color: black;
-}
+  /*span 1*/
+  
+  .neon-bt span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, white);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  
+  }
+
+  /*span 2*/
+  .neon-bt span:nth-child(2) {
+    top: -100;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  /*span 3*/
+  .neon-bt span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, white);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  /*span 4*/
+  
+  .neon-bt span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, white);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
 
 #btn-mobile {
     display: none;
@@ -66,12 +152,13 @@ a {
 }
 .floating {
     justify-content: center;
+    border-radius: 300px;
     width: 40%;
-    height: 50%;
+    height:50%;
     animation: float 6s ease-in-out infinite;
 }
 
-#item {
+.item {
     padding: 1%;
     display: flex;
     align-items: flex-start;
@@ -79,15 +166,21 @@ a {
     flex-direction: column;
 }
 
-#item p {
+.item h1 {
+    color: white;
+    text-shadow: 5px 3px 5px black;
+}
+
+.item p {
     font-size: 1.5rem;
+    text-shadow: 5px 3px 5px gray;
 }
 
 #main {
     display: flex;
-    background: cadetblue;
+    background: #041f5b;
     justify-content: space-around;
-    padding: 1%;
+    padding: 3% 0 3% 0;
 }
 
 #informations {
@@ -95,7 +188,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 3%;
     gap: 10px;
-    background-color: darkslategrey;
+    background-color: rgb(9, 27, 65);
 }
 
 #informations p {
@@ -115,9 +208,9 @@ a {
     display: flex;
     flex-direction: column;
     padding: 5%;
-    border: 2px solid rgb(27, 41, 41);
+    border: 2px solid rgb(77, 90, 90);
     border-radius: 10px;
-    box-shadow: 10px 5px 10px rgb(27, 41, 41)
+    box-shadow: 2px 5px 10px rgb(13, 13, 13);
 }
 
 #colunm-1 p {
@@ -128,9 +221,9 @@ a {
     display: flex;
     flex-direction: column;
     padding: 5%;
-    border: 2px solid rgb(27, 41, 41);
+    border: 2px solid rgb(77, 90, 90);
     border-radius: 10px;
-    box-shadow: 10px 5px 10px rgb(27, 41, 41)
+    box-shadow: 2px 5px 10px rgb(13, 13, 13);
 }
 
 #colunm-2 p {
@@ -141,9 +234,9 @@ a {
     padding: 0 5% 0 5%;
     flex-direction: column;
     padding: 5%;
-    border: 2px solid rgb(27, 41, 41);
+    border: 2px solid rgb(77, 90, 90);
     border-radius: 10px;
-    box-shadow: 10px 5px 10px rgb(27, 41, 41)
+    box-shadow: 2px 5px 10px rgb(13, 13, 13);
 }
 
 #colunm-3 p {
@@ -154,9 +247,9 @@ a {
     padding: 0 5% 0 5%;
     padding: 5%;
     flex-direction: column;
-    border: 2px solid rgb(27, 41, 41);
+    border: 2px solid rgb(77, 90, 90);
     border-radius: 10px;
-    box-shadow: 10px 5px 10px rgb(27, 41, 41)
+    box-shadow: 2px 5px 10px rgb(13, 13, 13);
 }
 
 #colunm-4 p {
@@ -170,7 +263,7 @@ a {
     gap: 10px;
     padding: 2%;
     flex-direction: column;
-    background-color: darkslategray;
+    background-color: rgb(9, 27, 65);
 }
 
 #email {
@@ -212,7 +305,7 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(27, 41, 41);
+    background-color: #07183d;
     font-size: 2rem;
 }
 
@@ -227,14 +320,14 @@ input:focus {
     box-shadow: 5px 5px 10px rgb(141, 136, 136);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     #menu {
         display: block;
         position: absolute;
         width: 100%;
         top: 70px;
         right: 0px;
-        background-color: #e7e7e7;
+        background-color: rgb(6, 18, 43);
         transition: .5s;
         z-index: 1000;
         height: 0px;
@@ -253,7 +346,8 @@ input:focus {
     }
 
     #menu a {
-        padding: 1rem 0;
+        width: 80%;
+        padding: 2rem 0;
         margin: 0 1rem;
         border: 1px solid rgba(0, 119, 255, 0.219);
         border-bottom: 2px solid rgba(0, 119, 255, 0.219);
