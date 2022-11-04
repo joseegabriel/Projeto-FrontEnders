@@ -29,5 +29,16 @@ function stateHandle() {
 }
 
 function alertEmailSent (){
-    alert('Email enviado! Entraremos em contato em breve.')
+  Toastify({
+    text: "Email enviado!",
+    duration: 3000,
+    newWindow: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(190deg, rgba(0,0,0,1) 35%, rgba(11,50,221,1) 100%);",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
 }
