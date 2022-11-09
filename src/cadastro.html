@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../src/img/logo-icon.png">
-    <title>Iniciativa X</title>    
+    <title>Iniciativa X</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
 </head>
@@ -62,20 +62,23 @@
 </header>
 
 <main>
-<div id="main">
-    <div class="box-cadastro">
-        <h1>Criar Conta</h1>
-        <p id="login">Já possui conta?&nbsp;<a href="">Faça o Login</a> <br> </p>
-        <div class="input-email">
-            <img src="https://cdn-icons-png.flaticon.com/512/1917/1917737.png" alt=""><input type="email" placeholder="Email"> <br>
-        </div>
-        <div class="password">
-            <img src="https://cdn-icons-png.flaticon.com/512/2825/2825855.png" alt=""><input type="text" placeholder="Senha">
-        </div>
-        <div class="password">
-            <img src="https://cdn-icons-png.flaticon.com/512/2825/2825855.png" alt=""><input type="text" placeholder=" Confirmar Senha">
-        </div>
-            <p class="button" id="btn-register" onclick="alertRegister()" >Cadastrar</p>
+    <div id="main">
+    <!-- Inicio do formulario -->
+        <form method="get" action=".">
+            <label> <p id="title-cep">Digite aqui seu CEP!</p>
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+            onblur="pesquisacep(this.value);" placeholder="Digite aqui seu CEP"/></label><br />
+            <label> <p>Rua:</p>
+                <input name="rua" type="text" id="rua" size="60" placeholder="Rua" /></label><br />
+            <label> <p>Bairro:</p>
+                <input name="bairro" type="text" id="bairro" size="40" placeholder="Bairro" /></label><br />
+            <label> <p>Cidade:</p>
+                <input name="cidade" type="text" id="cidade" size="40" placeholder="Cidade" /></label><br />
+            <label> <p>Estado:</p>
+                <input name="uf" type="text" id="uf" size="2" placeholder="Estado" /></label><br />
+            <label> <p>IBGE:</p>
+                <input name="ibge" type="text" id="ibge" size="8" placeholder="IBGE" /></label><br />
+        </form>
     </div>
 </main>
 
@@ -131,6 +134,8 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script src="js/viacep.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </body>
 </html>

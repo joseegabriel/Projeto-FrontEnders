@@ -1,0 +1,118 @@
+#main {
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse nowrap;
+    padding: 3% 0px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(62, 67, 116);
+}
+
+.card-description { 
+    display: flex;
+    gap: 10px;
+}
+
+.card-description h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.card-description img {
+    width: 50px;
+}
+
+.card-photo {
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 200px;
+    margin-bottom: 30px;
+}
+
+#Kaua {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.233);
+    transition: 1s ease-in-out;
+}
+
+#Kaua:hover {
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+#Jose {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.233);
+    transition: 1s ease-in-out;
+}
+
+#Jose:hover {
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+#Amanda {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.233);
+    transition: 1s ease-in-out;
+}
+
+#Amanda:hover {
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+#Rute {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.233);
+    transition: 1s ease-in-out;
+}
+
+#Rute:hover {
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+#Mayara {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.233);
+    transition: 1s ease-in-out;
+}
+
+#Mayara:hover {
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+@media (max-width: 1024px) {
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px)  {
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+}
