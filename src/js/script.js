@@ -43,6 +43,21 @@ function alertEmailSent (){
   }).showToast();
 }
 
+function alertRecover (){
+  Toastify({
+    text: "Email enviado!",
+    duration: 3000,
+    newWindow: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(190deg, rgba(0,0,0,1) 35%, rgba(11,50,221,1) 100%);",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
+}
+
 function alertRegister (){
   Toastify({
     text: "Conta criada com sucesso, faça login!",
@@ -60,7 +75,7 @@ function alertRegister (){
 
 // Get the modal
 var modal = document.getElementById("myModal");
-var modal2 = document.getElementById("mdyMoal2");
+var modal2 = document.getElementById("myModal2");
 var modal3 = document.getElementById("myModal3");
 
 // Get the button that opens the modal

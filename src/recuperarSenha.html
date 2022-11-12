@@ -8,7 +8,7 @@
     <title>Iniciativa X</title>    
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/recuperarSenha.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
 </head>
@@ -64,19 +64,14 @@
 <main>
 <div id="main">
     <div class="box-cadastro">
-        <h1>Criar Conta</h1>
-        <p id="login">Já possui conta?&nbsp;<a href="">Faça o Login</a> <br> </p>
+        <h1>Redefinir Senha</h1>
+        <p id="login">Insira o email de registro da conta<a href=""></p>
         <div class="input-email">
-            <img src="https://cdn-icons-png.flaticon.com/512/1917/1917737.png" alt=""><input type="email" placeholder="Email"> <br>
+            <img src="https://cdn-icons-png.flaticon.com/512/1917/1917737.png" alt="">
+            <input type="email" placeholder="Email">
         </div>
-        <div class="password">
-            <img src="https://cdn-icons-png.flaticon.com/512/2825/2825855.png" alt=""><input type="text" placeholder="Senha">
-        </div>
-        <div class="password">
-            <img src="https://cdn-icons-png.flaticon.com/512/2825/2825855.png" alt=""><input type="text" placeholder=" Confirmar Senha">
-        </div>
-            <a href="recuperarSenha.html"> Não tem conta? Crie uma!</a>
-            <p class="button" id="btn-register" onclick="alertRegister()" >Cadastrar</p>
+        <br>
+        <p class="button" id="btn-register" onclick="alertRecover()">Recuperar Senha</p>
     </div>
 </main>
 
